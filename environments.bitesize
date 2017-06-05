@@ -28,8 +28,3 @@ environments:
       - name: mongodb
         external_url: mongo-nodetest.dev-bite.io
         type: mongo
-    health_check:
-        command:
-          - /app/liveness.sh
-        initial_delay: 30
-        timeout: 10
