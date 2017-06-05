@@ -1,7 +1,7 @@
 project: poc-dev
 components:
   - name: node-app
-    version: 1.2.5
+    version: 1.0.0
     os: linux
     dependencies:
       - type: gem-package
@@ -28,20 +28,3 @@ components:
       - shell: ls -al
     artifacts:
       - location: "*.deb"
-  - name: mongo
-    version: 1.0.1
-    os: linux
-    dependencies:
-      - type: gem-package
-        package: fpm
-      - type: debian-package
-        package: rlwrap
-      - type: debian-package
-        package: build-essential
-    repository:
-      git: https://github.com/AndyMoore111/mongod_prov.git
-      branch: master
-    build:
-      - shell: fpm -s dir -t deb -n mongo -x "**/.git/**" -v 1.0.1-$(date "+%Y%m%d%H%M%S") --prefix /usr/local/bin .
-    artifacts:
-      - location: '*.deb'
