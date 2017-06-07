@@ -1,12 +1,11 @@
 project: poc-dev
 environments:
   - name: dev
-    namespace: poc-dev
+    namespace: nodeapp-dev
     deployment:
       method: rolling-upgrade
     services:
       - name: node-app
-        version: "1.0.0"
         external_url: nodetest.dev-bite.io
         ssl: true
         port: 3000
@@ -26,5 +25,5 @@ environments:
           - name: MONGO_ADMIN_PASS
             value: Pearson
       - name: mongodb
-        external_url: mongo-nodetest.dev-bite.io
+#        external_url: mongo-nodetest.dev-bite.io
         type: mongo

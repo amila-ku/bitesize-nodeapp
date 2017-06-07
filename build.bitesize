@@ -1,7 +1,6 @@
 project: poc-dev
 components:
   - name: node-app
-    version: 1.0.0
     os: linux
     dependencies:
       - type: gem-package
