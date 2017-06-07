@@ -1,7 +1,7 @@
 project: poc
 applications:
   - name: node-app
-    runtime: ubuntu-nodejs5x:1.2
+    runtime: ubuntu-nodejs5x
     dependencies:
       - name: node-app
         type: debian-package
