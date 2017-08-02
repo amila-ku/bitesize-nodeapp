@@ -1,7 +1,7 @@
 project: poc-dev
 environments:
   - name: dev
-    namespace: nodeapp-dev
+    namespace: paas-dev
     deployment:
       method: rolling-upgrade
     services:
@@ -25,5 +25,4 @@ environments:
           - name: MONGO_ADMIN_PASS
             value: Pearson
       - name: mongodb
-#        external_url: mongo-nodetest.dev-bite.io
         type: mongo
