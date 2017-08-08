@@ -1,4 +1,4 @@
-project: poc-dev
+project: amik-dev
 environments:
   - name: dev
     namespace: amik-dev

@@ -1,4 +1,4 @@
-project: poc
+project: amik-dev
 applications:
   - name: node-app
     runtime: ubuntu-nodejs4x:1.0

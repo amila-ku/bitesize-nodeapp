@@ -1,4 +1,4 @@
-project: poc-dev
+project: amik-dev
 components:
   - name: node-app
     os: linux
