@@ -2,12 +2,14 @@ project: poc
 applications:
   - name: node-app
     runtime: ubuntu-nodejs4x:1.0
+    version: "0.0.1"
     dependencies:
       - name: node-app
         type: debian-package
         origin:
           build: node-app
     command: "node /app/server.js"
+
   - name: mongo
     runtime: ubuntu-mongo2x:1.0
     dependencies:
